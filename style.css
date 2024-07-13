@@ -1,0 +1,39 @@
+button.choice{
+    margin-right: .5em;
+    border-radius: 2px;
+    border:transparent;
+    outline: none;
+    box-shadow: none;
+    padding: .5em .8em;
+    font-weight: bold;
+    color:white;
+    background: #ddd;
+}
+button.choice:nth-child(last){
+    margin-right: 0;
+}
+
+button.choice.selected{
+    background:dodgerblue;
+}
+
+.question-wrap{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: .3em 0em;
+    padding: .5em;
+    border-right: 5px solid transparent;
+}
+.question-wrap.active{
+    border-right: 5px solid crimson;
+    border-left: 5px solid crimson;
+}
+
+.question-wrap:nth-child(even){
+    background-color: #eee;
+    margin:.2em 0;
+}
+.question{
+    padding-top: .3em;
+}
